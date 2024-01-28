@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "num",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "words",
+						"type": "string"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "num",
+						"type": "address"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Map.sol": "Map"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Map.sol": {
+			"keccak256": "0xe0549041ff829baf400af4cd82386c62fe5de355a0c88ab7f42871529c84b7ab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e648daf64848316a72883ca2cef1811ea76f0623de61bfcd54f343d061f142e3",
+				"dweb:/ipfs/QmW8zz9mRpdYPCKDo4N5jKsUCrscpayB96WFAF5QXbReyz"
+			]
+		}
+	},
+	"version": 1
+}
