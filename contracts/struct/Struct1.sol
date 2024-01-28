@@ -14,9 +14,20 @@ contract Struct{
     }
 
     Employee employee = Employee({
-        name: "nname",
-        pay: 1223
-    })
+        name: "name",
+        pay: 123
+    });
+
+    function getFirstEmployee() public view returns (Employee memory){
+        return employee;
+    }
+
+    Employee employee2 = Employee("name2", 1234);
+
+    function getSecondEmployee() public view returns(Employee memory){
+        return employee2;
+    }
+
 
 
 }

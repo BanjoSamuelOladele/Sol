@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getFirstEmployee",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "pay",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Struct.Employee",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSecondEmployee",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "pay",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Struct.Employee",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/struct/Struct1.sol": "Struct"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/struct/Struct1.sol": {
+			"keccak256": "0xcc3e1a980f87edce473f7461a8fc1030966319401cf8cc6dfb82a3ea96755430",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9d7f1ab2a9b7623293cf2770bc14631ea4bd6e654f06d81e29c73204585c6ddb",
+				"dweb:/ipfs/QmXz3TYJFqx8rRyVCWW5Y2p9aexsfPhdXneEi4oqxk8h3J"
+			]
+		}
+	},
+	"version": 1
+}
