@@ -6,6 +6,24 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newLenght",
+						"type": "uint256"
+					}
+				],
+				"name": "changeTweetLength",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -142,11 +160,11 @@
 	},
 	"sources": {
 		"contracts/twitter/Twitter.sol": {
-			"keccak256": "0x649de0d0b89ab4d7a1e494e2db761b72ef4d901a504f4c4105e965711290f130",
+			"keccak256": "0xd28bed0f784bec7659f13a903e64f0063a8e75a8d8932a092357e7ae5b89c403",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7bb5a690bf179fe1c9731a83f9e0e971c05215dfa7923c16f42d466ac549654b",
-				"dweb:/ipfs/QmRL7WVHa7frDzUUrjQYR3neLPaMT8oghBeb9s5N5acEsq"
+				"bzz-raw://a84ad0d914b7742ae37a7a924106e48b0204d6655dc5dac143395d6d34e9c191",
+				"dweb:/ipfs/Qme6Wb6MMQMaBSGGyZPdK3qf4YVmNDekrri1mDdeEkqWhm"
 			]
 		}
 	},
