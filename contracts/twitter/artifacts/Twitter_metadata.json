@@ -37,6 +37,65 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "getA",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeTweeted",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "contentLike",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Twitter.Tweet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getTweet",
 				"outputs": [
@@ -60,6 +119,11 @@
 							{
 								"internalType": "uint256",
 								"name": "contentLike",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "id",
 								"type": "uint256"
 							}
 						],
@@ -121,6 +185,11 @@
 								"internalType": "uint256",
 								"name": "contentLike",
 								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct Twitter.Tweet",
@@ -129,6 +198,42 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "likeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "unlikeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -160,11 +265,11 @@
 	},
 	"sources": {
 		"contracts/twitter/Twitter.sol": {
-			"keccak256": "0xd28bed0f784bec7659f13a903e64f0063a8e75a8d8932a092357e7ae5b89c403",
+			"keccak256": "0xd681f9ca555db1bd7543b29a1007848fb0062c64becd0e2877b36b56fedcee5d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a84ad0d914b7742ae37a7a924106e48b0204d6655dc5dac143395d6d34e9c191",
-				"dweb:/ipfs/Qme6Wb6MMQMaBSGGyZPdK3qf4YVmNDekrri1mDdeEkqWhm"
+				"bzz-raw://e36afdd8732d3bcf127053729a25f3f417e4fcd6e9688673f6950712e9dfa00b",
+				"dweb:/ipfs/QmcvitArf9NvFhR3UjB8B5D34yNFzHx3tQNqhxv666Xpco"
 			]
 		}
 	},

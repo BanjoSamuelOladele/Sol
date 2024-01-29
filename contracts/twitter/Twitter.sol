@@ -18,6 +18,7 @@ contract Twitter{
         string content;
         uint timeTweeted;
         uint contentLike;
+        uint id;
     }
 
     modifier onlyOwner(){
@@ -36,7 +37,8 @@ contract Twitter{
             author: msg.sender,
             content: _content,
             timeTweeted: block.timestamp,
-            contentLike: 1
+            contentLike: 0,
+            id: tweets[msg.sender].length + 1
         });
         tweets[msg.sender].push(tweet);
     }
@@ -51,6 +53,25 @@ contract Twitter{
 
     function getTweet() public view returns(Tweet[] memory){
         return tweets[msg.sender];
+    }
+
+    function getOwner() public view returns (address){
+        return owner;
+    }
+
+    function likeTweet(address addr, uint id) external {
+        require(tweets[addr][id].id == id, "No tweet found");
+        tweets[addr][id-1].contentLike += 1;
+    }
+
+    function unlikeTweet(address addr, uint id) external {
+        require(tweets[addr][id].id == id, "No tweet found");
+        require(tweets[addr][id - 1].contentLike > 0, "No like for this tweet");
+        tweets[addr][id].contentLike -= 1;
+    }
+
+    function getA(address addr) public view returns(Tweet[] memory){
+        return tweets[addr];
     }
 
 }
